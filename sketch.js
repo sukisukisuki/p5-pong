@@ -46,7 +46,7 @@ function draw() {
     paddle_x = paddle_x + paddle_step;
 
     // is the ball hitting the right or left wall? 1st ball
-    if (ball_x - ball_r < -10 || ball_x + ball_r > width) {
+    if (ball_x - ball_r < 0 || ball_x + ball_r > width) {
 	ball_x_step = -ball_x_step;
     }
     
